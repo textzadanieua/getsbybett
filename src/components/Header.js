@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Navline from "./Navline"
 import { useStaticQuery, graphql } from "gatsby"
 import SearchNavForm from "./SearchNavForm"
-import logo from "../images/gatsby-icon.png"
+import logo from "../images/logo.png"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -34,7 +34,7 @@ const Header = () => {
         <div className="header-wrap">
           <div className="header-logo">
             <Link to="/">
-              <img src={logo} alt="Gatsby logo" width="50" />
+              <img src={logo} alt="Gatsby logo" width="180" />
             </Link>
           </div>
           <div className="header-mob-btn">

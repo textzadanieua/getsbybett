@@ -1,4 +1,5 @@
 import React from "react"
+import commentImg from "../images/comment-img.jpg"
 
 const CommentBody = ({ name, content, addReply }) => {
   return (
@@ -6,9 +7,8 @@ const CommentBody = ({ name, content, addReply }) => {
       <div className="comment__meta">
         <div className="comment__author">
           <img
-            src="http://1.gravatar.com/avatar/120c856bbd8f2977fdc3015963fc1de3?s=64&d=mm&r=g"
-            alt="Avatar"
-            srcSet="http://1.gravatar.com/avatar/120c856bbd8f2977fdc3015963fc1de3?s=64&d=mm&r=g 2x"
+            src={commentImg}
+            alt={`${name} - Avatar`}
             loading="lazy"
             width="32"
             height="32"
