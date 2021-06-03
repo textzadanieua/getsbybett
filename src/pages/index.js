@@ -14,7 +14,16 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={seoTitle} description={seoDescr} />
+      <SEO
+        title={seoTitle}
+        description={seoDescr}
+        meta={[
+          {
+            name: "google-site-verification",
+            content: "OXxmxGSrMJr5UVj4WL5OPMKXz7WO97fNpYAaHjBjikY",
+          },
+        ]}
+      />
       <div className="container">
         <div className="row">
           <div className="col-md-12">
